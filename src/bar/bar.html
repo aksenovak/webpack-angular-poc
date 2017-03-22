@@ -1,0 +1,21 @@
+<h1 class='bar'>Bar state</h1>
+
+<a ui-sref='foo'>Go to Foo state</a>
+
+<form ng-fab-form
+      ng-fab-form-options="vm.formOptions"
+      name="vm.simpleForm">
+    <label for="username">Username</label>
+    <input type="text" id="username"
+           placeholder="Username"
+           ng-model="vm.simpleForm.username"
+           ng-required="true">
+
+    <label for="password">Password</label>
+    <input type="password" id="password"
+           placeholder="Password"
+           ng-model="vm.simpleForm.password"
+           ng-required="true">
+
+    <button type="submit">Submit</button>
+</form>
